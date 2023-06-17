@@ -92,7 +92,7 @@ function Test({ qna }: TestProps) {
           <p>{t(`qna:${currentData.question}`)}</p>
         </article>
 
-        <article tw="px-5 py-4 text-center">
+        <article tw="px-5 pb-5 text-center">
           <img tw="w-60 h-60 rounded-full shadow inline" src={`/images/${step+1}.png`}></img>
         </article>
 

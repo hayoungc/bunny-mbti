@@ -17,7 +17,7 @@ function Home() {
       <main tw="space-y-5">
         <img src={MAIN_IMG_CDN} alt="미리보기" />
 
-        <p tw="text-sm text-lg px-2 text-center">
+        <p tw="text-sm text-lg px-2 text-center whitespace-pre-line">
           {t('intro:intro-1')}
           <span tw="text-pink-500 font-bold text-xl">{t('intro:intro-kpop')}</span>
           {t('intro:intro-2')}

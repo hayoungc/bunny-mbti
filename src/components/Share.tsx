@@ -14,7 +14,7 @@ function Share({ title, clipboard, twitter, result, pageUrl }: ShareProps) {
   const shareToKaKao = () => {
     const { Kakao } = window
     Kakao.Share.sendCustom({
-      templateId: 70113,
+      templateId: 95065,
       templateArgs: { NAME: name, THUM: thum },
     })
   }

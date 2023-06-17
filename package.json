@@ -35,7 +35,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +63,7 @@
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.43.0",
+    "gh-pages": "^5.0.0",
     "i": "^0.3.7",
     "npm": "^8.5.0",
     "postcss": "^8.4.5"
