@@ -44,36 +44,52 @@ function Test({ qna }: TestProps) {
 
     switch (res) {
       case 'ISTP':
-      case 'INTP':
         res = '1'
         break
-      case 'ESFJ':
-      case 'ENFJ':
+      case 'INTP':
         res = '2'
         break
-      case 'ISFP':
-      case 'INFP':
+      case 'ESFJ':
         res = '3'
         break
-      case 'ENFP':
-      case 'ENTP':
+      case 'ENFJ':
         res = '4'
         break
-      case 'ISTJ':
-      case 'INTJ':
+      case 'ISFP':
         res = '5'
         break
-      case 'ESTP':
-      case 'ESFP':
+      case 'INFP':
         res = '6'
         break
-      case 'ISFJ':
-      case 'INFJ':
+      case 'ENFP':
         res = '7'
         break
-      case 'ESTJ':
-      case 'ENTJ':
+      case 'ENTP':
         res = '8'
+        break
+      case 'ISTJ':
+        res = '9'
+        break
+      case 'INTJ':
+        res = '10'
+        break
+      case 'ESTP':
+        res = '11'
+        break
+      case 'ESFP':
+        res = '12'
+        break
+      case 'ISFJ':
+        res = '13'
+        break
+      case 'INFJ':
+        res = '14'
+        break
+      case 'ESTJ':
+        res = '15'
+        break
+      case 'ENTJ':
+        res = '16'
         break
       default:
         throw new Error('잘못된 타입입니다')
