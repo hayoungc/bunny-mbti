@@ -26,7 +26,7 @@ function Home() {
         </p>
         <div tw="px-3">
           <Link href="/test">
-            <button type="button" tw="py-4 w-full bg-gray-500 rounded text-pink-300">
+            <button type="button" tw="py-2 w-full bg-gray-500 rounded text-pink-300 text-xl">
               {t('intro:start-button')}
             </button>
           </Link>
