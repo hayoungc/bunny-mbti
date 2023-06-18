@@ -109,7 +109,7 @@ function Test({ qna }: TestProps) {
         </article>
 
         <article tw="px-5 pb-5 text-center">
-          <img tw="w-60 h-60 rounded-full shadow inline" src={`/images/${step+1}.png`}></img>
+          <img tw="w-60 h-60 shadow inline" src={`/images/questions/${step+1}.png`}></img>
         </article>
 
         <article tw="text-center space-y-4">
