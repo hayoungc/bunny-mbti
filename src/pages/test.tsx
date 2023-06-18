@@ -105,15 +105,15 @@ function Test({ qna }: TestProps) {
       <Metatag />
       <section tw="px-4">
         <div tw="flex">{step > 0 ? 
-          <button type="button" tw="flex-initial mr-4 h-10 mt-2 text-black rounded-lg border border-gray-200 hover:bg-red-700 hover:text-white pl-3 pr-1"
+          <button type="button" tw="flex-initial mr-4 h-14 mt-2 text-black rounded-lg border border-gray-200 hover:bg-red-700 hover:text-white pl-3 pr-1"
                 onClick={() => setStep((_step) => _step - 1)}>
             <div tw="align-middle">
-              <svg tw="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg tw="w-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
               </svg>
             </div>
           </button> : null}        
-        <div tw="flex-1 mt-1"><ProgressBar step={step} /></div></div>
+        <div tw="flex-1 mt-3"><ProgressBar step={step} /></div></div>
         <article tw="p-5 text-center text-2xl text-pink-500 h-fit break-keep">
           <p>{t(`qna:${currentData.question}`)}</p>
         </article>
@@ -122,11 +122,11 @@ function Test({ qna }: TestProps) {
           <img tw="w-60 h-60 ml-2 rounded-lg shadow inline" src={`/images/questions/${step+1}.png`}></img>
         </article>
 
-        <article tw="text-center space-y-4 fixed bottom-10 [max-width:395px] w-full">
+        <article tw="text-center space-y-4 fixed bottom-10 w-full pr-10">
           {currentData.options.map((answer, i) => {
             return (
             <Option
-            option={t(`qna:${answer.answer}`)}
+                option={t(`qna:${answer.answer}`)}
                 key={i}
                 onClick={() => {
                   const [key, value] = Object.entries(answer.type)[0]
