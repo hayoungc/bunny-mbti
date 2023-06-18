@@ -17,7 +17,7 @@ interface ResultProps {
 }
 function Result({ result, type }: ResultProps) {
   const { t } = useTranslation()
-  const pageUrl = useMemo(() => `https://my-idol-type-test.vercel.app/result/${type}`, [])
+  const pageUrl = useMemo(() => `https://bunny-mbti.vercel.app/result/${type}`, [])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -27,7 +27,6 @@ function Result({ result, type }: ResultProps) {
 
   const initKakaoSdk = () => {
     const { Kakao } = window
-    console.log(KAKAO_KEY)
     if (!Kakao.isInitialized()) Kakao.init(KAKAO_KEY)
   }
 
@@ -80,7 +79,6 @@ function Result({ result, type }: ResultProps) {
           result={{ ...result, name: t(`result:${result.name}`) }}
           title={t('result:share')}
           clipboard={t('result:clipboard')}
-          twitter={t('result:twitter')}
         />
       </section>
     </>

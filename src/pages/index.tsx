@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useMemo, useEffect } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -7,10 +7,25 @@ import 'twin.macro'
 
 import Layout from '../components/Layout'
 import Metatag from '~/components/Metatag'
+import Share from '~/components/Share'
+import { ITestResult } from '~/types/data'
+import { FB_APP_ID, KAKAO_KEY } from '~/constants'
 import { MAIN_IMG_CDN } from '~/constants'
 
 function Home() {
   const { t } = useTranslation()
+  const pageUrl = useMemo(() => `https://bunny-mbti.vercel.app.vercel.app/`, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    initKakaoSdk()
+  }, [])
+
+  const initKakaoSdk = () => {
+    const { Kakao } = window
+    if (!Kakao.isInitialized()) Kakao.init(KAKAO_KEY)
+  }
+
   return (
     <>
       <Metatag />
@@ -31,6 +46,16 @@ function Home() {
             </button>
           </Link>
         </div>
+        <Share
+          pageUrl={pageUrl}
+          result={{ name: t(`intro:share`),
+                    desc: "",
+                    partner: "",
+                    id: 0,
+                    og: ""}}
+          title={t('intro:share')}
+          clipboard={t('intro:clipboard')}
+        />
       </main>
     </>
   )
