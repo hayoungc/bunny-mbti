@@ -10,7 +10,7 @@ interface MetatagProps {
 function Metatag({
   title = 'My bunny MBTI test',
   description = '나는 어떤 유형의 버니일까?',
-  image = 'https://bunny-mbti-git-main-hayoungc.vercel.app/images/5.png',
+  image = 'https://bunny-mbti-git-main-hayoungc.vercel.app/images/0.png',
 }: MetatagProps) {
   return (
     <Head>
