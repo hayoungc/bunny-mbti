@@ -122,7 +122,7 @@ function Test({ qna }: TestProps) {
           <img tw="w-60 h-60 ml-2 rounded-lg shadow inline" src={`/images/questions/${step+1}.png`}></img>
         </article>
 
-        <article tw="text-center space-y-4 fixed bottom-10 w-full pr-6">
+        <article tw="text-center space-y-4 fixed bottom-10 w-full pr-8">
           {currentData.options.map((answer, i) => {
             return (
             <Option
