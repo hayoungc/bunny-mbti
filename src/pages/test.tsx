@@ -104,26 +104,25 @@ function Test({ qna }: TestProps) {
     <>
       <Metatag />
       <section tw="px-4">
-        <button type="button" tw="mt-2 bg-gray-800 text-white rounded-lg border-r border-gray-100 py-1 hover:bg-red-700 hover:text-white px-3"
+        <div tw="flex">{step > 0 ? 
+          <button type="button" tw="flex-initial mr-4 h-10 mt-2 text-black rounded-lg border border-gray-200 hover:bg-red-700 hover:text-white pl-3 pr-1"
                 onClick={() => setStep((_step) => _step - 1)}>
-        <div tw="flex flex-row align-middle">
-          <svg tw="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
-          </svg>
-          <p tw="ml-1">Prev</p>
-        </div>
-      </button>
-        <ProgressBar step={step} />
-
-        <article tw="p-5 text-center text-xl text-pink-500 height[120px]">
+            <div tw="align-middle">
+              <svg tw="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
+              </svg>
+            </div>
+          </button> : null}        
+        <div tw="flex-1 mt-1"><ProgressBar step={step} /></div></div>
+        <article tw="p-5 text-center text-2xl text-pink-500 h-fit break-keep">
           <p>{t(`qna:${currentData.question}`)}</p>
         </article>
 
-        <article tw="px-5 pb-5 text-center">
-          <img tw="w-60 h-60 shadow inline" src={`/images/questions/${step+1}.png`}></img>
+        <article tw="pb-5 text-center [min-width:300px]">
+          <img tw="w-60 h-60 ml-2 rounded-lg shadow inline" src={`/images/questions/${step+1}.png`}></img>
         </article>
 
-        <article tw="text-center space-y-4">
+        <article tw="text-center space-y-4 fixed bottom-10 [max-width:395px] w-full">
           {currentData.options.map((answer, i) => {
             return (
             <Option

@@ -25,12 +25,10 @@ function Types({ testResult }: TypesProps) {
               <article tw="cursor-pointer space-y-2 opacity-50 hover:opacity-100 ">
                 <div>
                   <img
-                    width={200}
-                    height={200}
                     src={`/images/${result.id}.png`}
                     //src={result.og}
                     alt={result.name}
-                    tw="rounded-full shadow inline"
+                    tw="rounded-full shadow inline h-60 w-48"
                   />
                 </div>
                 <p tw="text-gray-500 ">{t(`result:${result.name}`)}</p>

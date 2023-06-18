@@ -24,7 +24,7 @@ function Footer() {
 
   return (
     <footer>
-      <div ref={adfit} tw="height[100px]"></div>
+      <div ref={adfit} tw="[height:100px]"></div>
     </footer>
   )
 }
