@@ -55,6 +55,62 @@
       "partner": "type8-partner",
       "id": 8,
       "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type9-name",
+      "desc": "type9-desc",
+      "partner": "type9-partner",
+      "id": 9,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type10-name",
+      "desc": "type10-desc",
+      "partner": "type10-partner",
+      "id": 10,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type11-name",
+      "desc": "type11-desc",
+      "partner": "type11-partner",
+      "id": 11,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type12-name",
+      "desc": "type12-desc",
+      "partner": "type12-partner",
+      "id": 12,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type13-name",
+      "desc": "type13-desc",
+      "partner": "type13-partner",
+      "id": 13,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type14-name",
+      "desc": "type14-desc",
+      "partner": "type14-partner",
+      "id": 14,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type15-name",
+      "desc": "type15-desc",
+      "partner": "type15-partner",
+      "id": 15,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
+    },
+    {
+      "name": "type16-name",
+      "desc": "type16-desc",
+      "partner": "type16-partner",
+      "id": 16,
+      "og": "https://rawcdn.githack.com/borachoidev/My-Idol-Type/9db39f52240ecc175551323967d908cdc78fd6f0/public/images/8.jpg?raw=true"
     }
   ]
 }

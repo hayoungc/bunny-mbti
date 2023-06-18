@@ -151,6 +151,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
       { params: { type: '6' }, locale: 'ko' },
       { params: { type: '7' }, locale: 'ko' },
       { params: { type: '8' }, locale: 'ko' },
+      { params: { type: '9' }, locale: 'ko' },
+      { params: { type: '10' }, locale: 'ko' },
+      { params: { type: '11' }, locale: 'ko' },
+      { params: { type: '12' }, locale: 'ko' },
+      { params: { type: '13' }, locale: 'ko' },
+      { params: { type: '14' }, locale: 'ko' },
+      { params: { type: '15' }, locale: 'ko' },
+      { params: { type: '16' }, locale: 'ko' },
     ],
     fallback: false, // See the "fallback" section below
   }
