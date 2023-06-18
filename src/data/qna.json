@@ -5,11 +5,11 @@
       "options": [
         {
           "answer": "answer1-a",
-          "type": { "J": 1 }
+          "type": { "E": 1 }
         },
         {
           "answer": "answer1-b",
-          "type": { "J": -1 }
+          "type": { "E": -1 }
         }
       ]
     },
@@ -18,11 +18,11 @@
       "options": [
         {
           "answer": "answer2-a",
-          "type": { "T": 1 }
+          "type": { "J": 1 }
         },
         {
           "answer": "answer2-b",
-          "type": { "T": -1 }
+          "type": { "J": -1 }
         }
       ]
     },
@@ -31,11 +31,11 @@
       "options": [
         {
           "answer": "answer3-a",
-          "type": { "J": 1 }
+          "type": { "E": -1 }
         },
         {
           "answer": "answer3-b",
-          "type": { "J": -1 }
+          "type": { "E": 1 }
         }
       ]
     },
@@ -44,11 +44,11 @@
       "options": [
         {
           "answer": "answer4-a",
-          "type": { "N": -1 }
+          "type": { "T": 1 }
         },
         {
           "answer": "answer4-b",
-          "type": { "N": 1 }
+          "type": { "T": -1 }
         }
       ]
     },
@@ -57,11 +57,11 @@
       "options": [
         {
           "answer": "answer5-a",
-          "type": { "N": 1 }
+          "type": { "J": 1 }
         },
         {
           "answer": "answer5-b",
-          "type": { "N": -1 }
+          "type": { "J": -1 }
         }
       ]
     },
@@ -71,11 +71,11 @@
       "options": [
         {
           "answer": "answer6-a",
-          "type": { "T": 1 }
+          "type": { "N": -1 }
         },
         {
           "answer": "answer6-b",
-          "type": { "T": -1 }
+          "type": { "N": 1 }
         }
       ]
     },
@@ -84,11 +84,11 @@
       "options": [
         {
           "answer": "answer7-a",
-          "type": { "J": -1 }
+          "type": { "T": 1 }
         },
         {
           "answer": "answer7-b",
-          "type": { "J": 1 }
+          "type": { "T": -1 }
         }
       ]
     },
@@ -97,11 +97,11 @@
       "options": [
         {
           "answer": "answer8-a",
-          "type": { "E": -1 }
+          "type": { "N": -1 }
         },
         {
           "answer": "answer8-b",
-          "type": { "E": 1 }
+          "type": { "N": 1 }
         }
       ]
     },
@@ -110,11 +110,11 @@
       "options": [
         {
           "answer": "answer9-a",
-          "type": { "N": -1 }
+          "type": { "N": 1 }
         },
         {
           "answer": "answer9-b",
-          "type": { "N": 1 }
+          "type": { "N": -1 }
         }
       ]
     },
@@ -123,11 +123,11 @@
       "options": [
         {
           "answer": "answer10-a",
-          "type": { "T": 1 }
+          "type": { "E": 1 }
         },
         {
           "answer": "answer10-b",
-          "type": { "T": -1 }
+          "type": { "E": -1 }
         }
       ]
     },
@@ -136,11 +136,11 @@
       "options": [
         {
           "answer": "answer11-a",
-          "type": { "E": -1 }
+          "type": { "N": -1 }
         },
         {
           "answer": "answer11-b",
-          "type": { "E": 1 }
+          "type": { "N": 1 }
         }
       ]
     },
@@ -149,11 +149,11 @@
       "options": [
         {
           "answer": "answer12-a",
-          "type": { "E": 1 }
+          "type": { "T": 1 }
         },
         {
           "answer": "answer12-b",
-          "type": { "E": -1 }
+          "type": { "T": -1 }
         }
       ]
     }
