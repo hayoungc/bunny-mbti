@@ -38,11 +38,14 @@ function Share({ title, clipboard, result, pageUrl }: ShareProps) {
     <div tw="px-3 py-1">
       <p tw="text-lg text-center text-gray-500">{title}</p>
       <div tw="flex space-x-2 justify-center">
-        <CopyToClipboard text={pageUrl}>
+        <CopyToClipboard tw="w-10 h-10" text={pageUrl}>
           <DefaultLinkButton onClick={shareToLink} aria-label="클립보드복사" />
         </CopyToClipboard>
 
-        <KakaoLinkButton onClick={shareToKaKao} id="kakao-link-btn" aria-label="카카오톡으로공유" />
+        <KakaoLinkButton tw="w-10 h-10" onClick={shareToKaKao} id="kakao-link-btn" aria-label="카카오톡으로공유" />
+      </div>
+      <div tw="text-center">
+        https://github.com/hayoungc
       </div>
     </div>
   )
