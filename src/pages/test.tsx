@@ -104,7 +104,7 @@ function Test({ qna }: TestProps) {
     <>
       <Metatag />
       <section tw="px-4">
-        <button type="button" tw="bg-gray-800 text-white rounded-lg border-r border-gray-100 py-1 hover:bg-red-700 hover:text-white px-3"
+        <button type="button" tw="mt-2 bg-gray-800 text-white rounded-lg border-r border-gray-100 py-1 hover:bg-red-700 hover:text-white px-3"
                 onClick={() => setStep((_step) => _step - 1)}>
         <div tw="flex flex-row align-middle">
           <svg tw="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
