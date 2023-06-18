@@ -114,7 +114,7 @@ function Test({ qna }: TestProps) {
             </div>
           </button> : null}        
         <div tw="flex-1 mt-3"><ProgressBar step={step} /></div></div>
-        <article tw="p-5 text-center text-2xl text-pink-500 h-fit break-keep">
+        <article tw="p-4 text-center text-xl text-pink-500 h-fit break-keep">
           <p>{t(`qna:${currentData.question}`)}</p>
         </article>
 
@@ -122,7 +122,7 @@ function Test({ qna }: TestProps) {
           <img tw="w-60 h-60 ml-2 rounded-lg shadow inline" src={`/images/questions/${step+1}.png`}></img>
         </article>
 
-        <article tw="text-center space-y-4 fixed bottom-10 w-full pr-10">
+        <article tw="text-center space-y-4 fixed bottom-10 w-full pr-6">
           {currentData.options.map((answer, i) => {
             return (
             <Option
