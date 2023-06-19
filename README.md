@@ -96,6 +96,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Hayoung Choi - hayoungcau@gmail.com
+
 Handmandoooo - https://www.instagram.com/handmandoooo
 
 Project Link: [https://github.com/hayoungc/bunny-mbti](https://github.com/hayoungc/bunny-mbti)
