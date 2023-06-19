@@ -26,7 +26,7 @@
 <h3 align="center">bunny-mbti</h3>
 
   <p align="center">
-    project_description
+    Handmandoo + bunny => MBTI !
     <a href="https://bunny-mbti.vercel.app/">View Demo</a>
   </p>
 </div>
@@ -54,8 +54,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 It is a simple MBTI test using Handmandoo + Bunny collaboration. If you answer 12 questions, you can check your type among 16 personality types, and you can share it with your friends.
 
