@@ -79,6 +79,7 @@ function Result({ result, type }: ResultProps) {
           result={{ ...result, name: t(`result:${result.name}`) }}
           title={t('result:share')}
           clipboard={t('result:clipboard')}
+          dev_info={t('result:dev_info')}
         />
       </section>
     </>

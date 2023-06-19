@@ -5,6 +5,7 @@
   "intro-start": "\"시작하기\"",
   "intro-3": "버튼을 눌러주세요!",
   "start-button": "시작하기",
-  "share": "친구에게 공유하기",
-  "clipboard": "링크가 복사되었어요"
+  "share": "공유하기",
+  "clipboard": "링크가 복사되었어요",
+  "dev_info": "개발자 정보"
 }

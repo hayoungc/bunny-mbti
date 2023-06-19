@@ -1,14 +1,16 @@
 import { styled } from 'twin.macro'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import Link from 'next/link';
 
 import { ITestResult } from '~/types/data'
 interface ShareProps {
   title: string
   clipboard: string
   result: ITestResult
-  pageUrl: string
+  pageUrl: string,
+  dev_info: string
 }
-function Share({ title, clipboard, result, pageUrl }: ShareProps) {
+function Share({ title, clipboard, result, pageUrl, dev_info }: ShareProps) {
   const { name, og: thum } = result
   const shareToKaKao = () => {
     const { Kakao } = window
@@ -35,7 +37,8 @@ function Share({ title, clipboard, result, pageUrl }: ShareProps) {
   }
 
   return (
-    <div tw="px-3 py-1">
+    <div tw="flex justify-center place-content-evenly">
+    <div tw="px-3 py-1 mr-14">
       <p tw="text-lg text-center text-gray-500">{title}</p>
       <div tw="flex space-x-2 justify-center">
         <CopyToClipboard tw="w-10 h-10" text={pageUrl}>
@@ -44,9 +47,18 @@ function Share({ title, clipboard, result, pageUrl }: ShareProps) {
 
         <KakaoLinkButton tw="w-10 h-10" onClick={shareToKaKao} id="kakao-link-btn" aria-label="카카오톡으로공유" />
       </div>
-      <div tw="text-center">
-        https://github.com/hayoungc
+    </div>
+    <div tw="px-3 py-1">
+      <p tw="text-lg text-center text-gray-500">{dev_info}</p>
+      <div tw="flex space-x-2 justify-center">
+        <Link href="https://instagram.com/handmandoooo">
+        <InstaLinkButton tw="w-10 h-10"/>
+        </Link>
+        <Link href="https://github.com/hayoungc">
+        <GithubLinkButton tw="w-10 h-10"/>
+        </Link>
       </div>
+    </div>
     </div>
   )
 }
@@ -76,6 +88,24 @@ const TwitterLinkButton = styled.button`
 `
 const DefaultLinkButton = styled.button`
   background: #eee url('/images/share/link.png');
+  border-radius: 3px;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+`
+
+const InstaLinkButton = styled.button`
+  background: #eee url('/images/share/instagram.png');
+  border-radius: 3px;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+`
+
+const GithubLinkButton = styled.button`
+  background: #eee url('/images/share/github.png');
   border-radius: 3px;
   background-size: cover;
   width: 32px;

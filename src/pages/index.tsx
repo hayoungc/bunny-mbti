@@ -53,6 +53,7 @@ function Home() {
                     og: ""}}
           title={t('intro:share')}
           clipboard={t('intro:clipboard')}
+          dev_info={t('intro:dev_info')}
         />
       </main>
     </>
