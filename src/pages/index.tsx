@@ -30,7 +30,7 @@ function Home() {
     <>
       <Metatag />
       <main tw="space-y-5">
-        <img src={MAIN_IMG_CDN} alt="미리보기" />
+        <img tw="h-60 mx-auto" src={MAIN_IMG_CDN} alt="미리보기" />
 
         <p tw="text-lg px-2 text-center whitespace-pre-line">
           {t('intro:intro-1')}
