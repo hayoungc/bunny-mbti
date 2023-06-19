@@ -4,6 +4,9 @@ import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { GlobalStyles, styled } from 'twin.macro'
 import { appWithTranslation } from 'next-i18next'
+import Script from 'next/script'
+import { GA_TRACKING_ID } from '~/constants'
+import * as gtag from "../lib/gtag"
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -28,7 +31,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      //window.gtag.pageview(url)
+      gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
@@ -37,10 +40,30 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   }, [router.events])
 
   return (
+    <>
+    <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+    <Script
+      id='google-analytics'
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${GA_TRACKING_ID}, {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
     <div tw="bg-black">
       <RootContainer>{getLayout(<Component {...pageProps} />)}</RootContainer>
       <GlobalStyles />
     </div>
+    </>
   )
 }
 const RootContainer = styled.div`
