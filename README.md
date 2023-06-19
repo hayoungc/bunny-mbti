@@ -26,7 +26,8 @@
 <h3 align="center">bunny-mbti</h3>
 
   <p align="center">
-    Handmandoo + bunny => MBTI !
+    Handmandoooo + bunny => MBTI!
+    <br />
     <br />
     <a href="https://bunny-mbti.vercel.app/">View Demo</a>
   </p>
@@ -56,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-It is a simple MBTI test using Handmandoo + Bunny collaboration. If you answer 12 questions, you can check your type among 16 personality types, and you can share it with your friends.
+It is a simple MBTI test using Handmandoooo + Bunny collaboration. If you answer 12 questions, you can check your type among 16 personality types, and you can share it with your friends.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,6 +96,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Hayoung Choi - hayoungcau@gmail.com
+Handmandoooo - https://www.instagram.com/handmandoooo
 
 Project Link: [https://github.com/hayoungc/bunny-mbti](https://github.com/hayoungc/bunny-mbti)
 
