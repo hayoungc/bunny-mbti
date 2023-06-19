@@ -14,7 +14,7 @@ import { MAIN_IMG_CDN } from '~/constants'
 
 function Home() {
   const { t } = useTranslation()
-  const pageUrl = useMemo(() => `https://bunny-mbti.vercel.app.vercel.app/`, [])
+  const pageUrl = useMemo(() => `https://bunny-mbti.vercel.app/`, [])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
